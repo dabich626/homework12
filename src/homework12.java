@@ -1,7 +1,11 @@
-public class homework12 {
+public class homework12 {}
+    public String getBookName() {
+        return this.bookName;
+
+    }
+
     private String bookName;
     private int bookYear;
-    private String name;
 
     public static class Book {
         private String bookName;
@@ -17,10 +21,7 @@ public class homework12 {
     public void setBookYear (int bookYear){
         this.bookYear = bookYear;
     }
-    public String getBookName (){
-        return this.bookName;
 
-    }
     public static class Author {
         private String name;
         private String secondName;
