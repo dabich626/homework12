@@ -1,37 +1,40 @@
 public class homework12 {
+    private String bookName;
+    private int bookYear;
+    private String name;
+
     public static class Book {
         private String bookName;
         private Author authorName;
         private int bookYear;
-
-     public String getBookName (){
-        return this.bookName;
-
-     }
+    }
     public Author getAuthorName(){
-         return this.authorName;
+        return this.authorName;
     }
     public int getBookYear(){
-         return this.bookYear;
+        return this.bookYear;
     }
     public void setBookYear (int bookYear){
-         this.bookYear = bookYear;
+        this.bookYear = bookYear;
     }
+    public String getBookName (){
+        return this.bookName;
+
     }
     public static class Author {
         private String name;
         private String secondName;
         private String lastName;
-
-        public String getName(){
-            return this.name;
-        }
-        public  String getSecondName (){
-            return  this.secondName;
-        }
-        public String getLastName (){
-            return this.lastName;
-        }
+        
+    }
+    public String getName(){
+        return this.name;
+    }
+    public  String getSecondName (){
+        return  this.secondName;
+    }
+    public String getLastName (){
+        return this.lastName;
     }
     public static Book createBook (int bookYear, String bookName,Author authorName){
         Book Book = new Book();
